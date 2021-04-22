@@ -6,13 +6,13 @@ export default function Home() {
     return (
         <main>
             <div className="top-container">
-            <img src={image2} id="top-cloud" ></img>
+            <img src={image2} id="top-cloud" alt="clouds"></img>
             <section className="">
             <h1>I'm Diego</h1>
             <h2>A web developer</h2>
             </section>
-            <img src={image2} id="bot-cloud"></img>
-                <img src={image} id="mountain" ></img>
+            <img src={image2} id="bot-cloud" alt="clouds"></img>
+                <img src={image} id="mountain" alt="mountain"></img>
                 
                 
             </div>
