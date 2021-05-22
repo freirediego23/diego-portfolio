@@ -5,10 +5,17 @@ import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
 import NavBar from "./components/NavBar";
+import React from "react";
+
 
 
 function App() {
+  
+  
+  
   return (
+ 
+  
     <BrowserRouter>
     <NavBar></NavBar>
     <Switch>
@@ -19,7 +26,8 @@ function App() {
       <Route component={Project} path='/project'></Route>
     </Switch>
     </BrowserRouter>
-  )
+    
+  );
     
   
 }

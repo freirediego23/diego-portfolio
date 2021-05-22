@@ -28,6 +28,7 @@ export default function Post() {
     
 
     return (
+        <>
         <main className="bg-blue-100 min-h-screen p-12">
             <section className="container mx-auto">
                 <h1 className="text-5xl flex justify-center cursive">Blog Post Page</h1>
@@ -54,6 +55,12 @@ export default function Post() {
                 </div>
             </section>
         </main>
+        <footer className="color1 custom-font p-7 bg-red-100">
+        <p>Made by Diego Freire &copy; 2021 </p>
+        </footer>
+        
+</>
+
     )
 
 

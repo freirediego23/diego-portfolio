@@ -26,6 +26,7 @@ export default function About() {
     if (!author) return <div>Loading...</div>;
 
     return (
+        <>
         <main className="relative">
             <img src={diego} alt="Diego the hero" className="absolute w-full"/>
             <div className="p-10 lg:pt-48 container max-auto relative">
@@ -43,6 +44,10 @@ export default function About() {
                 </section>
             </div>
         </main>
+        <footer className="color1 custom-font p-7 bg-red-100">
+        <p>Made by Diego Freire &copy; 2021 </p>
+        </footer>
+        </>
     )
     
 }
