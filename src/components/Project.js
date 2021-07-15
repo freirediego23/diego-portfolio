@@ -101,7 +101,7 @@ export default function Project() {
 
                 <div className="form-main-cont row">
                     <div className="form-img-cont col-sm-11 col-md-6 col-lg-7">
-                        <img src={pic3} alt="img" />
+                        <img src={pic3} className="custom-img" alt="img" />
                     </div>
 
                     <div className="form-input-cont col-sm-11 col-md-6 col-lg-4">
