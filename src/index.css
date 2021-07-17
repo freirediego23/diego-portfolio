@@ -251,5 +251,9 @@ input, textarea {
     background-color: #a7c5eb;
   }
 
+  .top-container {
+    padding-top: 50px;
+  }
+
 
 }

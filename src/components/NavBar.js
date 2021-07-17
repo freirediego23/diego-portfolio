@@ -83,6 +83,14 @@ export default function NavBar() {
             id="example-navbar-danger"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li className="nav-item">
+              <NavLink 
+                to="/" 
+                className="custom-font inline-flex items-center py-3 px-3 my-6 rounded text-white-200 hover:text-white"
+                activeClassName="text-white">
+                    Home
+                </NavLink>
+              </li>
               <li className="nav-item">
               <NavLink 
                 to="/post" 
