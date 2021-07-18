@@ -12,6 +12,14 @@ export default function Project() {
     //     document.getElementById('#message') = 'Your message has been sent!'
     //         .then()
     // }
+        
+      
+       
+      
+    // function Message() {
+    //     return <p>Your message has been sent!</p>
+    //   }
+
 
     function sendEmail(e) {
         e.preventDefault();
@@ -46,6 +54,12 @@ export default function Project() {
                 <section className="container mx-auto">
                 <div id="designs">
                     <h2>My Projects</h2><br></br>
+                    <p className="mx-15 mb-20 lg:mx-60 lg:mb-20">My specialty is frontend web development. I can translate all your
+                        ideas into a great website. I have a solid understanding in fundamentals such as: HTML,
+                        CSS, JavaScript, version control with github, and frameworks as Bootstrap or Tailwind.
+                        Please have a look at some of my previous projects:<br></br>
+                    </p>
+                 
                     
                 </div>
                     {/* <h2 className="text-lg text-gray-600 flex justify-center mb-12">Diego's Portfolio</h2> */}
@@ -53,7 +67,7 @@ export default function Project() {
                         
                         {projectData &&
                         projectData.map((project, index) =>(
-                        <article className="bg-blue-200 relative rounded-lg shadow-xl p-14">
+                        <article className="bg-blue-200 relative rounded-lg shadow-xl sm:py-6 md:p-8 lg:p-16 p-7">
                             <h3 className="text-gray-900 text-3xl font-bold mb-2 hover:text-red-700">
                                 <a
                                 href={project.link}

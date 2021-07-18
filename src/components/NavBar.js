@@ -8,6 +8,12 @@ export default function NavBar() {
 
     const [navbarOpen, setNavbarOpen] = React.useState(false);
 
+    const closeMenu = () => {
+      setNavbarOpen(false)
+    }
+
+    
+    
     return (
 
         
@@ -63,14 +69,15 @@ export default function NavBar() {
 
            
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 navbar">
+      <nav id="nav" className="relative flex flex-wrap items-center justify-between px-2 py-3 navbar navbar-collapse">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-end lg:w-auto lg:static lg:block lg:justify-start">
-            
+          
             <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="text-white cust-button cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
-              onClick={() => setNavbarOpen(!navbarOpen)}
+              onClick={() => {setNavbarOpen(!navbarOpen)
+              }}
             >
               <i className="fa fa-bars"></i>
             </button>
@@ -82,12 +89,14 @@ export default function NavBar() {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul id="menu" className="flex flex-col lg:flex-row list-none lg:ml-auto menu2">
             <li className="nav-item">
               <NavLink 
                 to="/" 
                 className="custom-font inline-flex items-center py-3 px-3 my-6 rounded text-white-200 hover:text-white"
-                activeClassName="text-white">
+                activeClassName="text-white" 
+                onClick={() => closeMenu()} exact
+                >
                     Home
                 </NavLink>
               </li>
@@ -95,7 +104,9 @@ export default function NavBar() {
               <NavLink 
                 to="/post" 
                 className="custom-font inline-flex items-center py-3 px-3 my-6 rounded text-white-200 hover:text-white"
-                activeClassName="bg-blue-900 bg-gray-400 text-white">
+                activeClassName="bg-blue-900 bg-gray-400 text-white"
+                onClick={() => closeMenu()} exact
+                >
                     Blog Posts
                 </NavLink>
               </li>
@@ -103,14 +114,18 @@ export default function NavBar() {
               <NavLink 
                 to="/project" 
                 className="custom-font inline-flex items-center py-3 px-3 my-6 rounded text-white-200 hover:text-white"
-                activeClassName="bg-blue-900 bg-gray-400 text-white">
+                activeClassName="bg-blue-900 bg-gray-400 text-white"
+                onClick={() => closeMenu()} exact
+                >
                     Projects
                 </NavLink>
               </li>
               <li className="nav-item">
               <NavLink to="/about" 
                 className="custom-font inline-flex items-center py-3 px-3 my-6 rounded text-white-200 hover:text-white"
-                activeClassName="bg-blue-900 bg-gray-400 text-white">
+                activeClassName="bg-blue-900 bg-gray-400 text-white"
+                onClick={() => closeMenu()} exact
+                >
                     About Me
                 </NavLink>
               </li>
